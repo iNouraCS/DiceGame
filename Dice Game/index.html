@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dice Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wBackground">
+            <div class="first">
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+            </div>
+            <div class="seconed">
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+                <div class="bgCircle whiteCircle"></div>
+            </div>
+        </div>
+        <div class="pBackground">
+            <div class="first">
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+            </div>
+            <div class="seconed">
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+                <div class="bgCircle pCircle"></div>
+            </div>
+            <p>DICE</p>
+        </div>
+        <div class="background">
+            <div>
+                <h1 id="header">Let's Play!</h1>
+            </div>
+            <div>
+                <h5 id="player1">Player 1</h5>
+                <h5 id="player2">Player 2</h5>
+            </div>
+            <div class="flex-container">
+            <div class="container flex-child">
+                <div id="cube" class="cube">
+                    <div class="cube_face cube_one">
+                       <div class="circle">
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_two">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11 none"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12 none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_three">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11 none"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12 none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_four">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_five">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_six">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container flex-child">
+                <div id="cube1" class="cube">
+                    <div class="cube_face cube_one">
+                       <div class="circle">
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_two">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11 none"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12 none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_three">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11 none"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12 none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_four">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle none">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_five">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_0"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube_face cube_six">
+                        <div class="circle">
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                            <div class="cube_circle">
+                                <div class="cube_circle_11"></div>
+                                <div class="cube_circle_12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <script>
+            var number=[[0,0,0],[-20,25,0],[-20,200,360],[180,-255,-20],[-290,-360,-30],[-20,290,360],[110,185,10]];
+            var cube = document.getElementById("cube");
+            var cube1 = document.getElementById("cube1");
+            [ cube, cube1 ].forEach(function(element) {
+                element.addEventListener('click', function(e){
+                var random1 = Math.floor(Math.random()*6)+1;
+                var random2 = Math.floor(Math.random()*6)+1;
+                //cube.classList.remove("animation");
+                //cube.classList.add("animation");
+                //cube.style.animation = 'spin .8s linear';
+                cube.animate([
+                    {transform: 'rotateX(0deg) rotateY(0deg) rotateZ(50deg)'},
+                    {transform: 'rotateX(360deg) rotateY(360deg)'}
+                ]
+                             ,{duration: 500
+                             ,iterations: 1});
+                cube1.animate([
+                    {transform: 'rotateX(0deg) rotateY(0deg) rotateZ(50deg)'},
+                    {transform: 'rotateX(360deg) rotateY(360deg)'}
+                ]
+                             ,{duration: 500
+                             ,iterations: 1});
+
+
+                if (random1 == 3 || random1 == 6){
+                    console.log("this is random 1 : "+random1);
+                    cube.style.transform = 'rotateY('+number[random1][0]+'deg) rotateX('+number[random1][1]+'deg) rotateZ('+number[random1][2]+'deg)';
+                } else{
+                    console.log("This is random 1 : "+random1);
+                    cube.style.transform = 'rotateX('+number[random1][0]+'deg) rotateY('+number[random1][1]+'deg) rotateZ('+number[random1][2]+'deg)';
+                }
+
+
+                if (random2 == 3 || random2 == 6){
+                    console.log("this is random 2: "+random2);
+                    cube1.style.transform = 'rotateY('+number[random2][0]+'deg) rotateX('+number[random2][1]+'deg) rotateZ('+number[random2][2]+'deg)';
+                } else{
+                    console.log("This is random 2: " +random2);
+                    cube1.style.transform = 'rotateX('+number[random2][0]+'deg) rotateY('+number[random2][1]+'deg) rotateZ('+number[random2][2]+'deg)';
+                }
+
+                document.getElementById("header").style.marginLeft="0px";
+                if( random1 == random2 ){
+                    document.getElementById("header").style.marginLeft="115px";
+                    document.getElementById("header").innerHTML="Draw!";
+                }else if (random1 > random2){
+                    document.getElementById("header").innerHTML="Player 1 WIN!!";
+
+                }else{
+                    document.getElementById("header").innerHTML="Player 2 WIN!!";
+
+                          }
+                //cube.style.transition = '0.5s linear'
+
+
+    //                cube.addEventListener('animationend', function(e){
+    //                    cube.style.animation = '';
+    //                });
+
+                });
+            });
+
+        </script>
+    </body>
+</html>
+<script>
+
+ /*
+
+ ANIMATION PROBLEME:
+ - js does not support .style.animat
+    solution :
+    js provide animate() methode to animate elements
+
+ - 2 add event listner with specifice functionality for two element (cube) with diffrent IDs:
+    solution :
+    use foreach
+    1
+        transform: rotateX(-20deg) rotateY(25deg);
+    2
+        transform: rotateX(-20deg) rotateY(200deg) rotateZ(360deg);
+
+
+    4
+        transform: rotateX(-290deg) rotateY(-360deg) rotateZ(-30deg);
+    5
+        transform: rotateX(-20deg) rotateY(290deg) rotateZ(360deg);
+
+        ----
+    3
+        transform:  rotateY(180deg) rotateX(-255deg) rotateZ(-20deg);
+    6
+        transform:  rotateY(110deg) rotateX(185deg) rotateZ(10deg);
+    */
+</script>

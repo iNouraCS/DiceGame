@@ -1,0 +1,176 @@
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(50deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+
+}
+p{
+    color: white;
+    font-size: 80px;
+    font-family:  "Monaco";
+    margin-left: 590px;
+    margin-top: 400px;
+    text-shadow: midnightblue 2px 4px;
+    opacity: 0.9;
+}
+h1{
+    margin: 0px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+
+}
+h5{
+    margin: 0px;
+    margin-left: 70px;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+
+}
+#player1{
+    margin-left: 60px;
+}
+#player2{
+    margin-left: 110px;
+}
+.pBackground{
+    background-color: #ec705c;
+    margin-left: 20%;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+.wBackground{
+    background-color: ghostwhite;
+    margin: 0px;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+.background{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.28);
+    background-color: white;
+    margin: 10%;
+    padding-bottom: 130px;
+    padding-top: 50px;
+    padding-left: 190px;
+    padding-right: 190px;
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+    opacity: 0.93;
+}
+.whiteCircle{
+    height: 30px;
+    width: 30px;
+    background: #ec705c;
+    border-radius: 20px;
+    margin: 5px;
+    margin: 5px;
+    display: inline-block;
+    opacity: 0.55;
+}
+.pCircle{
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 20px;
+    margin: 5px;
+    margin: 5px;
+    display: inline-block;
+    opacity: 0.3;
+}
+.first,.seconed{
+    margin-left: 20px;
+}
+.pBackground .first{
+    margin-top: 13px;
+}
+.wBackground .first{
+    margin-top: 520px;
+}
+
+/*   */
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+.container{
+    display: block;
+    height: 100px;
+    width: 100px;
+    perspective: 500px;
+    margin: 50px 50px;
+}
+.anim{
+    animation: spin .8s linear 1;
+}
+.cube{
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg);
+    height: 100px;
+    width: 100px;
+}
+
+/*** CIRCLE STYLE ***/
+.circle{
+    margin-top: 7px;
+    margin-left: 18px;
+}
+.cube_circle div{
+    display: inline-block
+}
+.cube_circle_11,.cube_circle_12,.cube_circle_0{
+    height: 20px;
+    width: 20px;
+    background: white;
+    border-radius: 20px;
+    margin: 1px;
+    margin-right: 6px;
+}
+.cube_circle_0{
+    margin-left: 16px;
+}
+.none{
+    visibility:hidden
+}
+
+/*** CUPE FACE STYLE ***/
+.cube_face{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: #2C5F79;
+    border: 1.2px solid;
+    border-color: aliceblue;
+    border-radius: 7px;
+}
+.cube_one{
+    transform: translateZ(45px) rotateY(0deg);
+}
+.cube_two{
+    transform:  translateZ(-45px) rotateY(180deg);
+}
+.cube_three{
+    transform: translateY(-45px) rotateX(90deg);
+}
+.cube_four{
+    transform: translateY(45px) rotateX(-90deg);
+}
+.cube_five{
+    transform: translateX(45px) rotateY(90deg) ;
+}
+.cube_six{
+    transform: translateX(-45px) rotateY(-90deg);
+}
